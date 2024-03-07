@@ -4,39 +4,30 @@
 }}
 
 <main>
-	{{>heading title="NAV" info=data.test}}
+	{{!-- {{>heading title="NAV" info=data.test}} --}}
 
-    <section>
-        <a href="" class="btn__nav">
-            <img src="/svg/Arrow_back.svg" alt="back">
-        </a>
+    <nav class="nav">
+        <button class="nav__btn" id="back">
+            <img src="/svg/Arrow_back.svg" width="25" alt="back">
+        </button>
 
-         <a href="" class="btn__nav">
-            <img src="/svg/Arrow_forward.svg" alt="forward">
-        </a>
+         <button class="nav__btn" id="forward">
+            <img src="/svg/Arrow_forward.svg" width="25" alt="forward">
+        </button>
 
-         <a href="" class="btn__nav">
-            <img src="/svg/update.svg" alt="update">
-        </a>
+         <button class="nav__btn" id="reload">
+            <img src="/svg/update.svg" width="25" alt="update">
+        </button>
 
-         <a href="" class="btn__nav">
-            <img src="/svg/home.svg" alt="home">
-        </a>
+         <button class="nav__btn" id="home">
+            <img src="/svg/home.svg" width="25" alt="home">
+        </button>
+             
+        <input type="text" class="nav__input" id="input">
 
-         <a href="" class="btn__nav">
-           
-        </a>
-
-        <form action=""  class="nav__address">
-            <input type="text" method="get" class="nav__address--field">
-
-            <button class="btn__nav">
-                 <img src="/svg/Play-go.svg" alt="go">
-            </button>
-        </form>
-
-    </section>
-
+        <button class="nav__btn" id="go">
+                <img src="/svg/Play-go.svg" width="25" alt="go">
+    </nav>
 </main>
 
 {{!
